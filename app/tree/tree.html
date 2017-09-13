@@ -1,5 +1,5 @@
 <script type="text/ng-template" id="categoryTree">
-    {{ contact['name'] }}
+    {{ contact['type'] }}: {{ contact['name'] }}
     <ul ng-if="contact.contacts">
         <li ng-repeat="contact in contact.contacts" class="children" ng-include="'categoryTree'"></li>
     </ul>
